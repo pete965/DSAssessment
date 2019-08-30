@@ -3,50 +3,28 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class DictionaryServer {
-    // Declare the port number
-    private static int port = 3005;
-    // Identifies the user number connected
-    private static int counter = 0;
-
+    public static int port = 9357;
+    public static int numberOfUser = 0;
+    public static int numberOfWorks = 10;
     public static void main(String[] args) {
+//        Returns a copy of the environment's default socket factory.
         ServerSocketFactory factory = ServerSocketFactory.getDefault();
-        try(ServerSocket server = factory.createServerSocket(port))
-        {
-            System.out.println("Waiting for client connection-");
-            // Wait for connections.
-            while(true)
-            {
-                Socket client = server.accept();
-                counter++;
-                System.out.println("Client "+counter+": Applying for connection!");
-
-                // Start a new thread for a connection
-                Thread t = new Thread(() -> serveClient(client));
-                t.start();
+        private static Executor executor = Executors.newFixedThreadPool(numberOfWorks)
+        try{
+//            Returns an unbound server socket. The socket is configured with the socket options (such as accept timeout) given to this factory.
+            ServerSocket server = factory.createServerSocket(port);
+            while(true){
+//                Listens for a connection to be made to this socket and accepts it.
+                Socket clientSocket = server.accept();
+                numberOfUser++;
+                // TODO: 2019/8/30 Start a new thread for a connection
+                executor.execute(new Task());
             }
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
-    private static void serveClient(Socket client)
-    {
-        try(Socket clientSocket = client)
-        {
-            // Input stream
-            DataInputStream input = new DataInputStream(clientSocket.getInputStream());
-            // Output Stream
-            DataOutputStream output = new DataOutputStream(clientSocket.getOutputStream());
-
-            System.out.println("CLIENT: "+input.readUTF());
-
-            output.writeUTF("Server: Hi Client "+counter+" !!!");
-        }
-        catch (IOException e)
-        {
+        }catch(IOException e){
             e.printStackTrace();
         }
     }
