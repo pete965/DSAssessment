@@ -13,6 +13,9 @@ public class clientGui implements ActionListener{
     static String getinput;
     static int howmany;
     JFrame myFrame=new JFrame();
+    
+    String Desip="";
+    int Desport=0;
 
     JTextField query=new JTextField(10);
     JTextField addKey=new JTextField(10);
@@ -30,14 +33,18 @@ public class clientGui implements ActionListener{
      @param args  No implements will be used.
      */
     public static void main(String[] args){
+        String ip = args[0];
+        int port = Integer.parseInt(args[1]);
         clientGui party=new clientGui();
-        party.go();
+        party.go(ip,port);
     }
 
     /**
      This is go mathod.It aims to construct the JAVA GUI.And realize the function of the program.
      */
-    public void go(){
+    public void go(String ip,int port){
+        Desip = ip;
+        Desport = port;
         myFrame.setSize(1000,700);
         myFrame.setVisible(true);
         myFrame.setTitle("Welcome to the Jungle Party!");
@@ -73,12 +80,19 @@ public class clientGui implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        String output = "No output";
         if(e.getSource()==bt1){
-
+            DictionaryClient dictionaryClient = new DictionaryClient();
+            output = dictionaryClient.sendRequest("query",query.getText(),Desip,Desport);
+            // TODO: 2019/9/2  display the output
         }else if(e.getSource()==bt2){
-
+            DictionaryClient dictionaryClient = new DictionaryClient();
+            output = dictionaryClient.sendRequest("add",query.getText(),Desip,Desport);
+            // TODO: 2019/9/2  display the output
         }else{
-
+            DictionaryClient dictionaryClient = new DictionaryClient();
+            output = dictionaryClient.sendRequest("remove",query.getText(),Desip,Desport);
+            // TODO: 2019/9/2  display the output
         }
     }
 }

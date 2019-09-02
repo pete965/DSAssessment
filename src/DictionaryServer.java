@@ -7,10 +7,13 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 public class DictionaryServer {
-    public static int port = 9357;
+    public static int port = 0;
+    public static String dic = "";
     public static int numberOfUser = 0;
     public static int numberOfWorks = 10;
     public static void main(String[] args) {
+        port = Integer.parseInt(args[0]);
+        dic = args[1];
 //        Returns a copy of the environment's default socket factory.
         ServerSocketFactory factory = ServerSocketFactory.getDefault();
         Executor executor = Executors.newFixedThreadPool(numberOfWorks);
