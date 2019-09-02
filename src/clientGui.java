@@ -47,7 +47,7 @@ public class clientGui implements ActionListener{
         Desport = port;
         myFrame.setSize(1000,700);
         myFrame.setVisible(true);
-        myFrame.setTitle("Welcome to the Jungle Party!");
+        myFrame.setTitle("Best Dictionary You Have Ever Met");
         myFrame.setLocation(100,100);
 
         JPanel pan=new JPanel();

@@ -26,6 +26,7 @@ public class DictionaryServer {
                 numberOfUser++;
                 // TODO: 2019/8/30 Start a new thread for a connection
 //                executor.execute(new Task());
+//                sss
             }
         }catch(IOException e){
             e.printStackTrace();
