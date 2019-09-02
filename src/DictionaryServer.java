@@ -13,7 +13,7 @@ public class DictionaryServer {
     public static void main(String[] args) {
 //        Returns a copy of the environment's default socket factory.
         ServerSocketFactory factory = ServerSocketFactory.getDefault();
-        private static Executor executor = Executors.newFixedThreadPool(numberOfWorks)
+        Executor executor = Executors.newFixedThreadPool(numberOfWorks);
         try{
 //            Returns an unbound server socket. The socket is configured with the socket options (such as accept timeout) given to this factory.
             ServerSocket server = factory.createServerSocket(port);
@@ -22,7 +22,7 @@ public class DictionaryServer {
                 Socket clientSocket = server.accept();
                 numberOfUser++;
                 // TODO: 2019/8/30 Start a new thread for a connection
-                executor.execute(new Task());
+//                executor.execute(new Task());
             }
         }catch(IOException e){
             e.printStackTrace();
