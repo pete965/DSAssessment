@@ -33,6 +33,9 @@ public class DictionaryManager {
                     dic.put(keyValue[0],keyValue[1]);
                     slot = br.readLine(); // 一次读入一行数据
                 }
+                for (String keys : dic.keySet()) {
+                    System.out.println(keys+":"+dic.get(keys));
+                }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
                 // TODO: 2019/9/3 exception
@@ -46,12 +49,18 @@ public class DictionaryManager {
         String output;
         if(dic.get(key) == null){
             synchronized (this){
+                FileWriter fileWriter = null;
                 try {
-                    BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(this.filename));
-                    bufferedWriter.write(key+" "+value+"\n");
-                    bufferedWriter.flush();
-                    bufferedWriter.close();
+                    fileWriter = new FileWriter(this.filename);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+                try {
                     dic.put(key,value);
+                    for (String keys : dic.keySet()) {
+                        bufferedWriter.write(keys+" "+dic.get(keys)+"\n");
+                    }
                     output = "Success Add";
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
@@ -59,6 +68,12 @@ public class DictionaryManager {
                 } catch (IOException e){
                     e.printStackTrace();
                     output = "Failed IOException";
+                }finally {
+                    try {
+                        bufferedWriter.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }else{
