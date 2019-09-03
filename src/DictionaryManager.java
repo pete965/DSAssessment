@@ -79,16 +79,16 @@ public class DictionaryManager {
         }else{
             output = "Failed KeyAlreadyExists";
         }
-        return output;
+        return output+"\n";
     }
     public String query(String key){
-        String output;
+        String output=null;
         if(dic.get(key) == null){
             output = "Failed KeyNotExists";
         }else{
-            output = "Success Query"+dic.get(key);
+            output =dic.get(key);
         }
-        return output;
+        return output+"\n";
     }
     public String remove(String key){
         String output;
@@ -112,6 +112,6 @@ public class DictionaryManager {
                 }
             }
         }
-        return output;
+        return output+"\n";
     }
 }

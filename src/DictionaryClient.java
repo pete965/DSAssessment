@@ -27,6 +27,10 @@ public class DictionaryClient {
             bufferedWriter.flush();
             System.out.println("Request sent:"+content);
             output=bufferedReader.readLine();
+            System.out.println("Response Received:"+output);
+            output = output.trim();
+            bufferedWriter.close();
+
         } catch (IOException e) {
             // TODO: 2019/9/2 handle exception and display it;Exceptions consists multiple kinds
             e.printStackTrace();
