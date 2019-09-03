@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317a1bee-31a3-4fbd-b6d1-a5bc78cebc83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DSAssessment_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DictionaryServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DictionaryServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientGui.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DictionaryClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="551">
               <caret line="30" column="96" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -40,8 +37,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clientGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+            <state relative-caret-position="950">
+              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DictionaryServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,12 +59,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DictionaryServer.java">
+        <entry file="file://$PROJECT_DIR$/src/dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="1064">
+              <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#104#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,12 +91,14 @@
         <option value="$PROJECT_DIR$/src/DictionaryClient.java" />
         <option value="$PROJECT_DIR$/src/clientGui.java" />
         <option value="$PROJECT_DIR$/src/DictionaryServer.java" />
+        <option value="$PROJECT_DIR$/src/dictionary.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
-    <option name="width" value="978" />
+    <option name="y" value="-9" />
+    <option name="width" value="979" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -97,7 +109,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,6 +126,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +211,8 @@
       <workItem from="1567128287611" duration="1326000" />
       <workItem from="1567149305147" duration="1934000" />
       <workItem from="1567409886926" duration="4780000" />
-      <workItem from="1567415167255" duration="4753000" />
+      <workItem from="1567415167255" duration="5441000" />
+      <workItem from="1567468846499" duration="3123000" />
     </task>
     <task id="LOCAL-00001" summary="Try to commit via idea">
       <created>1567128433806</created>
@@ -243,11 +256,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567419022579</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test commit">
+      <created>1567431396028</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567431396028</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12793000" />
+    <option name="totallyTimeSpent" value="16604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,7 +282,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17426273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17895442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -271,7 +291,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -303,14 +323,15 @@
     <MESSAGE value="Regular commit" />
     <MESSAGE value="Basic GUI" />
     <MESSAGE value="Client is able to be exported to an jar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Client is able to be exported to an jar." />
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/clientGUI.form" />
     <entry file="file://$PROJECT_DIR$/src/DictionaryClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="551">
           <caret line="30" column="96" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -320,8 +341,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clientGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        <state relative-caret-position="950">
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -330,10 +351,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DictionaryServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="435">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#104#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
