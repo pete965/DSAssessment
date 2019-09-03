@@ -1,11 +1,22 @@
 import java.io.*;
 import java.util.HashMap;
 
-public class dictionary {
-    static HashMap<String,String> dic = new HashMap<String,String>();
+public class DictionaryManager {
+    static private HashMap<String,String> dic = new HashMap<String,String>();
+
+    public DictionaryManager(String dicPath){
+        initiateDic(dicPath);
+    }
 
     public void initiateDic(String dicPath){
         File filename = new File(dicPath);
+        if(!filename.exists()){
+            try {
+                filename.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         InputStreamReader reader = null; // 建立一个输入流对象reader
         try {
             reader = new InputStreamReader(new FileInputStream(filename));
