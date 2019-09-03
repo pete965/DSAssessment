@@ -7,11 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317a1bee-31a3-4fbd-b6d1-a5bc78cebc83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DictionaryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServeRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DictionaryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DictionaryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DictionaryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DictionaryManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DictionaryServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DictionaryServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clientGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientGui.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,22 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DictionaryServer.java">
+        <entry file="file://$PROJECT_DIR$/src/DictionaryClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ServeRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="133">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,14 +39,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DictionaryManager.java">
+        <entry file="file://$PROJECT_DIR$/src/DictionaryServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="57">
+              <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#197#198#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clientGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="92" column="71" selection-start-line="92" selection-start-column="71" selection-end-line="92" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DictionaryManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-209">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServeRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="31" column="54" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,13 +103,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/clientGUI.form" />
-        <option value="$PROJECT_DIR$/src/DictionaryClient.java" />
-        <option value="$PROJECT_DIR$/src/clientGui.java" />
         <option value="$PROJECT_DIR$/src/dictionary.java" />
         <option value="$PROJECT_DIR$/src/dictionaryManager.java" />
-        <option value="$PROJECT_DIR$/src/DictionaryManager.java" />
+        <option value="$PROJECT_DIR$/src/clientGui.java" />
         <option value="$PROJECT_DIR$/src/ServeRequest.java" />
         <option value="$PROJECT_DIR$/src/DictionaryServer.java" />
+        <option value="$PROJECT_DIR$/src/DictionaryClient.java" />
+        <option value="$PROJECT_DIR$/src/DictionaryManager.java" />
       </list>
     </option>
   </component>
@@ -163,6 +186,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DictionaryServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DictionaryServer" />
+      <module name="DSAssessment" />
+      <option name="PROGRAM_PARAMETERS" value="9999 C:\Users\Boyang\OneDrive\Studying\Semester 1\DS\dictionary.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DSAssessment" />
@@ -185,10 +216,12 @@
       <item itemvalue="Application.DictionaryClient" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.clientGui" />
+      <item itemvalue="Application.DictionaryServer" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.clientGui" />
+        <item itemvalue="Application.DictionaryServer" />
         <item itemvalue="Application.DictionaryClient" />
       </list>
     </recent_temporary>
@@ -208,7 +241,7 @@
       <workItem from="1567409886926" duration="4780000" />
       <workItem from="1567415167255" duration="5441000" />
       <workItem from="1567468846499" duration="3171000" />
-      <workItem from="1567488925833" duration="2630000" />
+      <workItem from="1567488925833" duration="6543000" />
     </task>
     <task id="LOCAL-00001" summary="Try to commit via idea">
       <created>1567128433806</created>
@@ -266,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567472182638</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="0903 Afternoon">
+      <created>1567493383195</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567493383195</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19282000" />
+    <option name="totallyTimeSpent" value="23195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -283,9 +323,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18096514" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18096514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,7 +333,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,7 +393,8 @@
     <MESSAGE value="Client is able to be exported to an jar." />
     <MESSAGE value="test commit" />
     <MESSAGE value="0903 morning" />
-    <option name="LAST_COMMIT_MESSAGE" value="0903 morning" />
+    <MESSAGE value="0903 Afternoon" />
+    <option name="LAST_COMMIT_MESSAGE" value="0903 Afternoon" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
@@ -364,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clientGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        <state relative-caret-position="332">
+          <caret line="92" column="71" selection-start-line="92" selection-start-column="71" selection-end-line="92" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -374,8 +414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DictionaryClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="96" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+        <state relative-caret-position="133">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -384,8 +424,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DictionaryServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="57">
+          <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServeRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -394,20 +444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DictionaryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="-209">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

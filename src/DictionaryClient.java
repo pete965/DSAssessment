@@ -6,12 +6,12 @@ public class DictionaryClient {
         String output="";
         String content="";
         if(requestType.equals("query")){
-            content="query"+" "+requestContent;
+            content="query"+" "+requestContent+"\n";
         }else if(requestType.equals("add")){
-            content="add"+" "+requestContent;
+            content="add"+" "+requestContent+"\n";
         }else{
 //            remove words from dictionary
-            content="remove"+" "+requestContent;
+            content="remove"+" "+requestContent+"\n";
         }
         output = send(content,ip,port);
         return output;
@@ -25,7 +25,7 @@ public class DictionaryClient {
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8"));
             bufferedWriter.write(content);
             bufferedWriter.flush();
-            System.out.println("Request sent");
+            System.out.println("Request sent:"+content);
             output=bufferedReader.readLine();
         } catch (IOException e) {
             // TODO: 2019/9/2 handle exception and display it;Exceptions consists multiple kinds

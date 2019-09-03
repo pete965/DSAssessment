@@ -3,72 +3,100 @@ import java.util.HashMap;
 
 public class DictionaryManager {
     static private HashMap<String,String> dic = new HashMap<String,String>();
+    private File filename;
+    private String dicPath;
 
     public DictionaryManager(String dicPath){
+        this.filename = new File(dicPath);
+        this.dicPath = dicPath;
         initiateDic(dicPath);
     }
 
     public void initiateDic(String dicPath){
-        File filename = new File(dicPath);
         if(!filename.exists()){
             try {
-                filename.createNewFile();
+                this.filename.createNewFile();
+                System.out.println("File not exists, create a new one");
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        InputStreamReader reader = null; // 建立一个输入流对象reader
-        try {
-            reader = new InputStreamReader(new FileInputStream(filename));
-            BufferedReader br = new BufferedReader(reader); // 建立一个对象，它把文件内容转成计算机能读懂的语言
-            String slot = "";
-            slot = br.readLine();
-            while (slot != null) {
-                String[] keyValue = slot.split(" ");
-                dic.put(keyValue[0],keyValue[1]);
-                slot = br.readLine(); // 一次读入一行数据
+        }else{
+            System.out.println("File already there, begin to load");
+            InputStreamReader reader = null; // 建立一个输入流对象reader
+            try {
+                reader = new InputStreamReader(new FileInputStream(filename));
+                BufferedReader br = new BufferedReader(reader); // 建立一个对象，它把文件内容转成计算机能读懂的语言
+                String slot = "";
+                slot = br.readLine();
+                while (slot != null) {
+                    String[] keyValue = slot.split(" ");
+                    dic.put(keyValue[0],keyValue[1]);
+                    slot = br.readLine(); // 一次读入一行数据
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+                // TODO: 2019/9/3 exception
+            } catch (IOException e){
+                e.printStackTrace();
+                // TODO: 2019/9/3 exception
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            // TODO: 2019/9/3
-        } catch (IOException e){
-            e.printStackTrace();
-            // TODO: 2019/9/3
         }
-
-
     }
     public String add(String key,String value){
-        String output = "";
+        String output;
         if(dic.get(key) == null){
-            // TODO: 2019/9/3  concurrency
-            dic.put(key,value);
-            output = "Added successfully";
+            synchronized (this){
+                try {
+                    BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(this.filename));
+                    bufferedWriter.write(key+" "+value+"\n");
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    dic.put(key,value);
+                    output = "Success Add";
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                    output = "Failed FileNotFound";
+                } catch (IOException e){
+                    e.printStackTrace();
+                    output = "Failed IOException";
+                }
+            }
         }else{
-            output = "Key already exists";
+            output = "Failed KeyAlreadyExists";
         }
         return output;
     }
     public String query(String key){
-        String output = "";
+        String output;
         if(dic.get(key) == null){
-            // TODO: 2019/9/3  concurrency
-            output = "Key not exists";
+            output = "Failed KeyNotExists";
         }else{
-            output = dic.get(key);
+            output = "Success Query"+dic.get(key);
         }
         return output;
     }
     public String remove(String key){
-        String output = "";
+        String output;
         if(dic.get(key) == null){
-            // TODO: 2019/9/3  concurrency
-            output = "Key not exists";
+            output = "Failed KeyNotExists";
         }else{
-            // TODO: 2019/9/3  concurrency
-            output = dic.get(key);
+            synchronized (this){
+                dic.remove(key);
+                filename.delete();
+                try {
+                    BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(this.filename));
+                    for (String keys : dic.keySet()) {
+                        bufferedWriter.write(keys+" "+dic.get(keys)+"\n");
+                    }
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    output = "Success Remove";
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    output = "Failed IOException";
+                }
+            }
         }
         return output;
     }
-
 }

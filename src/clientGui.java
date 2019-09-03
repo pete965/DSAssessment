@@ -87,11 +87,11 @@ public class clientGui implements ActionListener{
             // TODO: 2019/9/2  display the output
         }else if(e.getSource()==bt2){
             DictionaryClient dictionaryClient = new DictionaryClient();
-            output = dictionaryClient.sendRequest("add",query.getText(),Desip,Desport);
+            output = dictionaryClient.sendRequest("add",addKey.getText()+" "+addValue.getText(),Desip,Desport);
             // TODO: 2019/9/2  display the output
         }else{
             DictionaryClient dictionaryClient = new DictionaryClient();
-            output = dictionaryClient.sendRequest("remove",query.getText(),Desip,Desport);
+            output = dictionaryClient.sendRequest("remove",remove.getText(),Desip,Desport);
             // TODO: 2019/9/2  display the output
         }
     }
