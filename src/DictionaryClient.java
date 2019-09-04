@@ -1,4 +1,5 @@
 import java.io.*;
+import java.net.ConnectException;
 import java.net.Socket;
 
 public class DictionaryClient {
@@ -32,8 +33,7 @@ public class DictionaryClient {
             bufferedWriter.close();
 
         } catch (IOException e) {
-            // TODO: 2019/9/2 handle exception and display it;Exceptions consists multiple kinds
-            e.printStackTrace();
+            output = "Failed: "+ e;
         }
         return output;
     }
