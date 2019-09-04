@@ -101,9 +101,13 @@ public class clientGui implements ActionListener{
             queryOut.setText(output);
             System.out.println(output);
         }else if(e.getSource()==bt2){
-            DictionaryClient dictionaryClient = new DictionaryClient();
-            output = dictionaryClient.sendRequest("add",addKey.getText()+" "+addValue.getText(),Desip,Desport);
-            addOut.setText(output);
+            if(addValue.getText().length()<=0){
+                addOut.setText("You must enter a meanning for the word!");
+            }else{
+                DictionaryClient dictionaryClient = new DictionaryClient();
+                output = dictionaryClient.sendRequest("add",addKey.getText()+" "+addValue.getText(),Desip,Desport);
+                addOut.setText(output);
+            }
         }else{
             DictionaryClient dictionaryClient = new DictionaryClient();
             output = dictionaryClient.sendRequest("remove",remove.getText(),Desip,Desport);
