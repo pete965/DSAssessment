@@ -6,9 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="317a1bee-31a3-4fbd-b6d1-a5bc78cebc83" name="Default Changelist" comment="Simple solution to the value with spaces. Need further improvement.">
+    <list default="true" id="317a1bee-31a3-4fbd-b6d1-a5bc78cebc83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientGui.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clientGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="105" column="18" lean-forward="true" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+            <state relative-caret-position="19">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="103" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,9 +34,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="305.0" y="485.0">com</node>
+                <node x="220.0" y="337.0">netscape</node>
+                <node x="0.0" y="411.0">oracle</node>
+                <node x="0.0" y="559.0">org</node>
+                <node x="143.0" y="559.0">sun</node>
+                <node x="395.0" y="337.0">META-INF</node>
+                <node x="286.0" y="559.0">jdk</node>
+                <node x="0.0" y="0.0">clientGui</node>
+                <node x="0.0" y="337.0">groovyjarjarasm</node>
+                <node x="156.0" y="485.0">java</node>
+                <node x="162.0" y="411.0">groovy</node>
+                <node x="0.0" y="485.0">javax</node>
+                <node x="0.0" y="143.0">DictionaryClient</node>
+                <node x="0.0" y="263.0">groovyjarjarcommonscli</node>
+                <node x="324.0" y="411.0">javafx</node>
+                <node x="264.0" y="263.0">groovyjarjarantlr</node>
+              </nodes>
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="-142.5" y="146.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Methods</Category>
+                <Category>Constructors</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DictionaryClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="551">
               <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,7 +112,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -86,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,7 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -120,7 +157,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/dict_client/.project" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -216,7 +253,8 @@
       <workItem from="1567561674155" duration="5609000" />
       <workItem from="1567588171018" duration="1637000" />
       <workItem from="1567593805298" duration="379000" />
-      <workItem from="1567594367175" duration="713000" />
+      <workItem from="1567594367175" duration="859000" />
+      <workItem from="1567647184468" duration="2446000" />
     </task>
     <task id="LOCAL-00001" summary="Try to commit via idea">
       <created>1567128433806</created>
@@ -302,11 +340,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567586526048</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Simple solution to the value with spaces. Need further improvement.">
+      <created>1567595132458</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1567595132458</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34128000" />
+    <option name="totallyTimeSpent" value="36720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,7 +366,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1930295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19571045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -330,7 +375,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.325419" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.325419" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -434,48 +479,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServeRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/DictionaryManager.java" />
     <entry file="uml://JAVA/">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="295.0" y="370.0">com</node>
-            <node x="382.0" y="148.0">netscape</node>
-            <node x="340.0" y="222.0">oracle</node>
-            <node x="438.0" y="370.0">org</node>
-            <node x="220.0" y="74.0">DictionaryManager</node>
-            <node x="0.0" y="444.0">sun</node>
-            <node x="0.0" y="222.0">META-INF</node>
-            <node x="143.0" y="444.0">jdk</node>
-            <node x="175.0" y="222.0">ServeRequest</node>
-            <node x="149.0" y="370.0">clientGui</node>
-            <node x="0.0" y="74.0">groovyjarjarasm</node>
-            <node x="0.0" y="370.0">java</node>
-            <node x="0.0" y="296.0">groovy</node>
-            <node x="324.0" y="296.0">javax</node>
-            <node x="0.0" y="148.0">DictionaryClient</node>
-            <node x="0.0" y="0.0">groovyjarjarcommonscli</node>
-            <node x="191.0" y="148.0">DictionaryServer</node>
-            <node x="162.0" y="296.0">javafx</node>
-            <node x="264.0" y="0.0">groovyjarjarantlr</node>
+            <node x="305.0" y="485.0">com</node>
+            <node x="220.0" y="337.0">netscape</node>
+            <node x="0.0" y="411.0">oracle</node>
+            <node x="0.0" y="559.0">org</node>
+            <node x="143.0" y="559.0">sun</node>
+            <node x="395.0" y="337.0">META-INF</node>
+            <node x="286.0" y="559.0">jdk</node>
+            <node x="0.0" y="0.0">clientGui</node>
+            <node x="0.0" y="337.0">groovyjarjarasm</node>
+            <node x="156.0" y="485.0">java</node>
+            <node x="162.0" y="411.0">groovy</node>
+            <node x="0.0" y="485.0">javax</node>
+            <node x="0.0" y="143.0">DictionaryClient</node>
+            <node x="0.0" y="263.0">groovyjarjarcommonscli</node>
+            <node x="324.0" y="411.0">javafx</node>
+            <node x="264.0" y="263.0">groovyjarjarantlr</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.8620689655172413" x="-156.0" y="258.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-142.5" y="146.0" />
           <SelectedNodes />
-          <Categories />
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Constructors</Category>
+          </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/DictionaryManager.java" />
     <entry file="file://$PROJECT_DIR$/src/clientGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="105" column="18" lean-forward="true" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+        <state relative-caret-position="19">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="103" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -484,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DictionaryClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
+        <state relative-caret-position="551">
           <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
